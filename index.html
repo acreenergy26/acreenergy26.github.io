@@ -757,6 +757,7 @@
     }
 
   </style>
+  <script src="https://unpkg.com/@formspree/ajax@1"></script>
 </head>
 <body>
 
@@ -819,7 +820,7 @@
           </div>
         </div>
 
-        <div data-fs-error style="display:none; color: #E8C97A; font-size: 0.8rem; margin-bottom: 1rem; text-align: center;"></div>
+        <div data-fs-error style="display:none; color:#E8C97A; font-size:0.8rem; margin-bottom:1rem; text-align:center;"></div>
 
         <form id="waitlist-form">
           <div class="form-group">
@@ -849,8 +850,6 @@
           <button type="submit" class="btn" data-fs-submit-btn>Reserve my place</button>
           <p class="btn-note">No payment required &nbsp;·&nbsp; Response within 48 hours</p>
         </form>
-      </div>
-    </div>
   </section>
 
   <!-- MANIFESTO -->
@@ -995,31 +994,13 @@
   </footer>
 
   <script>
-    function handleSubmit() {
-      const name   = document.getElementById('name').value.trim();
-      const email  = document.getElementById('email').value.trim();
-      const suburb = document.getElementById('suburb').value.trim();
-      const status = document.getElementById('status').value;
-
-      if (!name || !email || !suburb || !status) {
-        alert('Please complete all fields before submitting.');
-        return;
-      }
-      const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRe.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-      }
-
-      // Replace with Formspree / Tally endpoint
-      console.log('Waitlist submission:', { name, email, suburb, status });
-
-      document.getElementById('form-body').style.display = 'none';
-      document.getElementById('success').style.display   = 'block';
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+      window.formspree = window.formspree || function() { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', { formElement: '#waitlist-form', formId: 'mdapqeap' });
+    });
 
     function toggleFaq(btn) {
-      const item   = btn.closest('.faq-item');
+      const item = btn.closest('.faq-item');
       const isOpen = item.classList.contains('open');
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
       if (!isOpen) item.classList.add('open');
