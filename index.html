@@ -58,7 +58,6 @@
       cursor: default;
     }
 
-    /* ─── GRAIN OVERLAY ─── */
     body::after {
       content: '';
       position: fixed;
@@ -69,7 +68,6 @@
       opacity: 0.4;
     }
 
-    /* ─── NAV ─── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -131,7 +129,6 @@
       border-color: var(--gold);
     }
 
-    /* ─── HERO ─── */
     .hero {
       min-height: 100vh;
       display: grid;
@@ -208,7 +205,6 @@
       animation: fadeUp 0.8s 0.5s ease both;
     }
 
-    /* ─── STAT ROW ─── */
     .stats {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -287,6 +283,107 @@
       font-weight: 300;
       line-height: 1.8;
       color: rgba(245,240,232,0.65);
+    }
+
+    /* ─── CASE STUDY ─── */
+    .case-study {
+      background: rgba(201,168,76,0.06);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 5rem 3rem;
+    }
+
+    .case-study-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .case-study-label {
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .case-study-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .case-study-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .case-study-quote {
+      font-family: 'Gilroy', sans-serif;
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--cream);
+      font-style: italic;
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+      border-left: 3px solid var(--gold);
+    }
+
+    .case-study-name {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--cream);
+      margin-bottom: 0.25rem;
+    }
+
+    .case-study-detail {
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: rgba(245,240,232,0.5);
+      letter-spacing: 0.05em;
+    }
+
+    .case-study-right {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .case-study-stat {
+      padding: 2rem 1.5rem;
+      border-right: 1px solid var(--rule);
+      text-align: center;
+    }
+
+    .case-study-stat:last-child { border-right: none; }
+
+    .case-study-num {
+      font-family: 'Gilroy', sans-serif;
+      font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+      font-weight: 500;
+      color: var(--gold-lt);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .case-study-stat-label {
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.5);
+      line-height: 1.4;
     }
 
     /* ─── SERVICES ─── */
@@ -614,8 +711,10 @@
       .stats { flex-wrap: wrap; }
       .stat { flex: 1 1 40%; border-bottom: 1px solid var(--rule); }
       footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .case-study { padding: 4rem 1.5rem; }
+      .case-study-body { grid-template-columns: 1fr; gap: 2.5rem; }
+      .case-study-right { grid-template-columns: repeat(3, 1fr); }
     }
-
 
     .form-wrap {
       width: 100%;
@@ -754,6 +853,9 @@
       h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
       .hero { padding: 5rem 1.25rem 2.5rem; }
       .stats { grid-template-columns: repeat(2, 1fr); }
+      .case-study-right { grid-template-columns: 1fr; }
+      .case-study-stat { border-right: none; border-bottom: 1px solid var(--rule); }
+      .case-study-stat:last-child { border-bottom: none; }
     }
 
   </style>
@@ -850,6 +952,9 @@
           <button type="submit" class="btn" data-fs-submit-btn>Reserve my place</button>
           <p class="btn-note">No payment required &nbsp;·&nbsp; Response within 48 hours</p>
         </form>
+      </div>
+    </div>
+    </div>
   </section>
 
   <!-- MANIFESTO -->
@@ -862,6 +967,38 @@
     <p>
       Your installer's job was the panels and the inverter. The City of Cape Town's solar registration — e-Services submission, ECSA professional sign-off, grid connection approval — is a separate process that most homeowners discover only when they try to export, or when they sell. Without it, your exported power earns nothing. We handle it so you don't learn that the hard way.
     </p>
+  </section>
+
+  <!-- CASE STUDY -->
+  <section class="case-study">
+    <div class="case-study-inner">
+      <div class="case-study-label">Real result · Cape Town</div>
+      <div class="case-study-body">
+        <div class="case-study-left">
+          <div class="case-study-quote">
+            "I had no idea my installer hadn't completed the solar registration. Once it was done, the credits started appearing on my municipal bill within weeks."
+          </div>
+          <div class="case-study-attribution">
+            <div class="case-study-name">Todd</div>
+            <div class="case-study-detail">Homeowner · ~10kW system · Cape Town</div>
+          </div>
+        </div>
+        <div class="case-study-right">
+          <div class="case-study-stat">
+            <div class="case-study-num">~R1,000</div>
+            <div class="case-study-stat-label">Municipal credits per month</div>
+          </div>
+          <div class="case-study-stat">
+            <div class="case-study-num">10kW</div>
+            <div class="case-study-stat-label">System size</div>
+          </div>
+          <div class="case-study-stat">
+            <div class="case-study-num">R1.16</div>
+            <div class="case-study-stat-label">Credit rate per kWh</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- SERVICES -->
@@ -931,7 +1068,7 @@
         <span class="marker"></span>
       </button>
       <div class="faq-a">
-        Almost certainly not. Installers typically submit a Certificate of Compliance — which covers the electrical installation, not solar registration. The City's solar regitsration (SSEG) process is a separate, distinct application that requires e-Services submission and ECSA professional sign-off. If you aren't receiving export credits, it hasn't been done.
+        Almost certainly not. Installers typically submit a Certificate of Compliance — which covers the electrical installation, not solar registration. The City's solar registration (SSEG) process is a separate, distinct application that requires e-Services submission and ECSA professional sign-off. If you aren't receiving export credits, it hasn't been done.
       </div>
     </div>
 
@@ -979,7 +1116,7 @@
   <!-- FOOTER CTA -->
   <div class="footer-cta">
     <h2>Your system should be<br/><em>working harder for you.</em></h2>
-    <p>Get SSEG-registered and start offsetting your municipal bill. We'll be in touch within 48 hours.</p>
+    <p>Get registered and start offsetting your municipal bill. We'll be in touch within 48 hours.</p>
     <a href="#register">Request an introduction</a>
   </div>
 
