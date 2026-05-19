@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '877071633062988');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=877071633062988&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  <!-- Google Tag Manager -->
+ <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+ 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+ })(window,document,'script','dataLayer','GTM-K23X4LN7');</script>
+ <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WattButler — Your Solar Should Be Cutting Your Business Costs</title>
+  <title>WattButler — Export Registration (SSEG) · Cape Town</title>
+  <meta name="description" content="Register your Cape Town solar system for grid export and municipal bill credits. WattButler handles City of Cape Town SSEG paperwork." />
   <style>
     @font-face {
       font-family: 'Gilroy';
@@ -58,7 +83,6 @@
       cursor: default;
     }
 
-    /* ─── GRAIN OVERLAY ─── */
     body::after {
       content: '';
       position: fixed;
@@ -69,7 +93,6 @@
       opacity: 0.4;
     }
 
-    /* ─── NAV ─── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -155,7 +178,20 @@
     .nav-links a:hover { color: var(--cream); }
     .nav-links a.active { color: var(--gold); }
 
-    /* ─── HERO ─── */
+    .footer-sibling {
+      text-align: center;
+      padding: 1.5rem 2rem 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .footer-sibling a {
+      color: var(--gold-lt);
+      text-decoration: none;
+    }
+
+    .footer-sibling a:hover { text-decoration: underline; }
+
     .hero {
       min-height: 100vh;
       display: grid;
@@ -200,7 +236,7 @@
       font-weight: 400;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.65);
+      color: var(--gold);
       margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
       animation: fadeUp 0.8s 0.3s ease both;
     }
@@ -211,7 +247,7 @@
       font-weight: 500;
       line-height: 1.2;
       letter-spacing: -0.02em;
-      color: #fff;
+      color: var(--cream);
       margin: 0 0 clamp(1rem, 2.5vw, 1.5rem);
       animation: fadeUp 0.8s 0.4s ease both;
     }
@@ -226,13 +262,12 @@
       font-size: clamp(0.85rem, 1.4vw, 1rem);
       font-weight: 300;
       line-height: 1.75;
-      color: rgba(255,255,255,0.82);
+      color: rgba(245,240,232,0.6);
       max-width: 44ch;
       margin: 0 0 clamp(1.5rem, 3vw, 2.5rem);
       animation: fadeUp 0.8s 0.5s ease both;
     }
 
-    /* ─── STAT ROW ─── */
     .stats {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -311,6 +346,107 @@
       font-weight: 300;
       line-height: 1.8;
       color: rgba(245,240,232,0.65);
+    }
+
+    /* ─── CASE STUDY ─── */
+    .case-study {
+      background: rgba(201,168,76,0.06);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 5rem 3rem;
+    }
+
+    .case-study-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .case-study-label {
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .case-study-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .case-study-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .case-study-quote {
+      font-family: 'Gilroy', sans-serif;
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--cream);
+      font-style: italic;
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+      border-left: 3px solid var(--gold);
+    }
+
+    .case-study-name {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--cream);
+      margin-bottom: 0.25rem;
+    }
+
+    .case-study-detail {
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: rgba(245,240,232,0.5);
+      letter-spacing: 0.05em;
+    }
+
+    .case-study-right {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .case-study-stat {
+      padding: 2rem 1.5rem;
+      border-right: 1px solid var(--rule);
+      text-align: center;
+    }
+
+    .case-study-stat:last-child { border-right: none; }
+
+    .case-study-num {
+      font-family: 'Gilroy', sans-serif;
+      font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+      font-weight: 500;
+      color: var(--gold-lt);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .case-study-stat-label {
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.5);
+      line-height: 1.4;
     }
 
     /* ─── SERVICES ─── */
@@ -638,8 +774,10 @@
       .stats { flex-wrap: wrap; }
       .stat { flex: 1 1 40%; border-bottom: 1px solid var(--rule); }
       footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .case-study { padding: 4rem 1.5rem; }
+      .case-study-body { grid-template-columns: 1fr; gap: 2.5rem; }
+      .case-study-right { grid-template-columns: repeat(3, 1fr); }
     }
-
 
     .form-wrap {
       width: 100%;
@@ -648,12 +786,11 @@
     }
 
     .form-card {
-      background: rgba(16,24,40,0.95);
-      border: 1px solid rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--rule);
       border-radius: 3px;
       padding: 2.5rem;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+      box-shadow: none;
     }
 
     .form-title {
@@ -715,7 +852,7 @@
       width: 100%;
       padding: 0.95rem 1.5rem;
       background: var(--gold);
-      color: var(--cream);
+      color: var(--navy);
       border: none;
       border-radius: 2px;
       font-family: 'Gilroy', sans-serif;
@@ -770,7 +907,7 @@
     .success-state p {
       font-size: 0.82rem;
       font-weight: 300;
-      color: rgba(16,24,40,0.6);
+      color: rgba(245,240,232,0.45);
       line-height: 1.7;
       margin: 0;
     }
@@ -779,11 +916,24 @@
       h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
       .hero { padding: 5rem 1.25rem 2.5rem; }
       .stats { grid-template-columns: repeat(2, 1fr); }
+      .case-study-right { grid-template-columns: 1fr; }
+      .case-study-stat { border-right: none; border-bottom: 1px solid var(--rule); }
+      .case-study-stat:last-child { border-bottom: none; }
       .nav-links { display: none; }
       nav { padding: 1rem 1.25rem; }
     }
 
   </style>
+  <script src="https://unpkg.com/@formspree/ajax@1"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3SLWGDW3C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M3SLWGDW3C');
+</script>
 </head>
 <body>
 
@@ -795,9 +945,9 @@
       </div>
     </a>
     <div class="nav-links">
-      <a href="/export.html">Export registration</a>
+      <a href="/export.html" class="active">Export registration</a>
       <a href="/register.html">Registration (no export)</a>
-      <a href="/business.html" class="active">Business</a>
+      <a href="/business.html">Business</a>
     </div>
     <a href="#register" class="nav-cta">Register Interest</a>
   </nav>
@@ -806,12 +956,12 @@
   <section class="hero">
     <div class="hero-left">
       <div class="hero-rule"></div>
-      <div class="hero-overline">Cape Town · Business Solar Registration</div>
+      <div class="hero-overline">Cape Town · SSEG with grid export</div>
 
-      <h1>Your panels generate.<br/><em>Your overheads get a break.</em></h1>
+      <h1>Your panels generate.<br/><em>Your bills get a break.</em></h1>
 
       <p class="hero-sub">
-        Cape Town businesses with solar can offset their entire municipal account — electricity, water, waste removal — by feeding surplus power back to the grid. Most systems aren't registered to do it. We handle the paperwork. You get back to running your business.
+        Cape Town homeowners with solar can offset their entire municipal bill (electricity, water, waste removal) by feeding excess power back to the grid. But only once your system is registered. We handle the application. You get the cash back.
       </p>
 
       <div class="h-rule">
@@ -821,14 +971,14 @@
       <div class="stats">
         <div class="stat">
           <div class="stat-num">R1.16</div>
-          <div class="stat-label">Credit Rate per kWh</div>
+          <div class="stat-label">Cash Back per kWh</div>
         </div>
         <div class="stat">
           <div class="stat-num">~R1,513</div>
-          <div class="stat-label">Est. Monthly Credit</div>
+          <div class="stat-label">Est. Monthly Cash Back</div>
         </div>
         <div class="stat">
-          <div class="stat-num">~6 weeks</div>
+          <div class="stat-num">~18 months</div>
           <div class="stat-label">Typical Payback</div>
         </div>
         <div class="stat">
@@ -842,78 +992,119 @@
     <!-- FORM -->
     <div class="form-wrap" id="register">
       <div class="form-card">
-        <div class="form-title">Get your business registered</div>
-        <div class="form-desc">Tell us about your business and system. We'll confirm eligibility within 24 hours — no obligation.</div>
+        <div class="form-title">Be the first to register</div>
+        <div class="form-desc">We'll review your system and confirm eligibility within 24 hours. No obligation.</div>
 
-        <div id="form-body">
+        <div data-fs-success style="display:none">
+          <div class="success-state" style="display:block">
+            <div class="success-diamond"></div>
+            <h3>Noted. We'll be in touch.</h3>
+            <p>Expect a message within 48 hours to discuss your system and next steps. Until then — your roof keeps working.</p>
+          </div>
+        </div>
+
+        <div data-fs-error style="display:none; color:#E8C97A; font-size:0.8rem; margin-bottom:1rem; text-align:center;"></div>
+
+        <form id="waitlist-form">
+          <input type="hidden" name="service" value="export-registration"/>
+          <input type="hidden" name="_subject" value="[Export] New registration lead"/>
           <div class="form-group">
-            <label for="name">Your name</label>
-            <input type="text" id="name" placeholder="Your name" autocomplete="name"/>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required data-fs-field/>
+            <span data-fs-error="name" style="color:#E8C97A; font-size:0.75rem;"></span>
           </div>
           <div class="form-group">
             <label for="email">Email address</label>
-            <input type="email" id="email" placeholder="your@email.com" autocomplete="email"/>
-          </div>
-<div class="form-group">
-            <label for="suburb">Business suburb</label>
-            <input type="text" id="suburb" placeholder="e.g. Woodstock, Parow, Bellville"/>
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required data-fs-field/>
+            <span data-fs-error="email" style="color:#E8C97A; font-size:0.75rem;"></span>
           </div>
           <div class="form-group">
-            <label for="status">Current SSEG status</label>
-            <select id="status">
+            <label for="suburb">Suburb</label>
+            <input type="text" id="suburb" name="suburb" placeholder="e.g. Constantia, Claremont" required data-fs-field/>
+          </div>
+          <div class="form-group">
+            <label for="status">Current registration status</label>
+            <select id="status" name="status" required data-fs-field>
               <option value="" disabled selected>Select one…</option>
-              <option value="not_started">Solar installed — never applied for SSEG</option>
-              <option value="in_progress">Application in progress</option>
-              <option value="rejected">Previously rejected or stalled</option>
-              <option value="not_sure">Unsure of my current status</option>
+              <option value="Solar installed — never applied">Solar installed — never applied</option>
+              <option value="Application in progress">Application in progress</option>
+              <option value="Previously rejected or stalled">Previously rejected or stalled</option>
+              <option value="Unsure of my current status">Unsure of my current status</option>
             </select>
           </div>
-          <button class="btn" onclick="handleSubmit()">Register my interest</button>
+          <button type="submit" class="btn" data-fs-submit-btn>Reserve my place</button>
           <p class="btn-note">No payment required &nbsp;·&nbsp; Response within 48 hours</p>
-        </div>
-
-        <div class="success-state" id="success">
-          <div class="success-diamond"></div>
-          <h3>Noted. We'll be in touch shortly.</h3>
-          <p>Expect a message within 48 hours to discuss your system and next steps. In the meantime — your roof keeps generating.</p>
-        </div>
+        </form>
       </div>
+    </div>
     </div>
   </section>
 
   <!-- MANIFESTO -->
   <section class="manifesto">
-    <div class="manifesto-label">The opportunity</div>
+    <div class="manifesto-label">Our position</div>
     <blockquote>
-      "Your solar system is reducing your electricity bill.
-      <strong>It could be reducing your entire municipal account.</strong>"
+      "Most Cape Town solar systems are done correctly.<br/>
+      The <strong>solar paperwork</strong> almost never is."
     </blockquote>
     <p>
-      Your installer connected your system to your building. SSEG registration — the City of Cape Town process that lets your business legally export surplus power and receive municipal credits — is a separate step that most installers skip. Without it, every kilowatt your panels push to the grid during off-peak hours is wasted. We handle the registration so you don't have to.
+      Your installer's job was the panels and the inverter. The City of Cape Town's solar registration — e-Services submission, ECSA professional sign-off, grid connection approval — is a separate process that most homeowners discover only when they try to export, or when they sell. Without it, your exported power earns nothing. We handle it so you don't learn that the hard way.
     </p>
+  </section>
+
+  <!-- CASE STUDY -->
+  <section class="case-study">
+    <div class="case-study-inner">
+      <div class="case-study-label">Real result · Cape Town</div>
+      <div class="case-study-body">
+        <div class="case-study-left">
+          <div class="case-study-quote">
+            "I had no idea my installer hadn't completed the solar registration. Once it was done, the credits started appearing on my municipal bill within weeks."
+          </div>
+          <div class="case-study-attribution">
+            <div class="case-study-name">Todd</div>
+            <div class="case-study-detail">Homeowner · ~10kW system · Cape Town</div>
+          </div>
+        </div>
+        <div class="case-study-right">
+          <div class="case-study-stat">
+            <div class="case-study-num">~R1,000</div>
+            <div class="case-study-stat-label">Municipal credits per month</div>
+          </div>
+          <div class="case-study-stat">
+            <div class="case-study-num">10kW</div>
+            <div class="case-study-stat-label">System size</div>
+          </div>
+          <div class="case-study-stat">
+            <div class="case-study-num">R1.16</div>
+            <div class="case-study-stat-label">Credit rate per kWh</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- SERVICES -->
   <section class="services">
     <div class="services-header">
-      <h2>What we handle<br/>for your business</h2>
+      <h2>What we manage<br/>on your behalf</h2>
       <span>Our Process</span>
     </div>
     <div class="service-list">
       <div class="service-item">
         <div class="service-num">I</div>
-        <h3>System Assessment</h3>
-        <p>We review your system size, existing documentation, and grid connection. Most commercial systems qualify — we'll confirm within 24 hours and tell you exactly what credits to expect on your account.</p>
+        <h3>Eligibility Assessment</h3>
+        <p>We review your system specifications, existing documentation, and grid connection to confirm solar export eligibility before any paperwork begins. No surprises.</p>
       </div>
       <div class="service-item">
         <div class="service-num">II</div>
         <h3>Application & Submission</h3>
-        <p>We handle everything — e-Services submission, ECSA professional sign-off, technical documentation. You won't need to deal with the City directly. One point of contact, start to finish.</p>
+        <p>We prepare and submit your complete application via the City of Cape Town's e-Services portal — including all required technical documents and ECSA professional sign-off.</p>
       </div>
       <div class="service-item">
         <div class="service-num">III</div>
-        <h3>Credits on Your Account</h3>
-        <p>We track the application and notify you when approved. Credits appear directly on your municipal account — offsetting electricity, water, and solid waste. If your account runs into surplus after all charges, the City refunds the balance. Most businesses recover our fee within 6 weeks.</p>
+        <h3>Approval & Activation</h3>
+        <p>We track your application status, respond to any City queries, and confirm when your system is cleared for export. You receive notification when credits begin appearing on your municipal account — offsetting electricity, water, and solid waste charges. If your account runs into credit after all municipal charges, the City will refund the balance.</p>
       </div>
     </div>
   </section>
@@ -921,10 +1112,10 @@
   <!-- TARIFF TABLE -->
   <section class="tariff-section">
     <div class="tariff-overline">The numbers</div>
-    <h2>What your business stands to recover</h2>
+    <h2>What your roof could offset on your municipal bill</h2>
     <table class="tariff-table">
       <tr>
-        <td>City of Cape Town SSEG credit rate</td>
+        <td>City of Cape Town export incentive rate</td>
         <td>R1.16 / kWh</td>
       </tr>
       <tr>
@@ -932,7 +1123,7 @@
         <td>~1,300 kWh</td>
       </tr>
       <tr>
-        <td>Estimated monthly credit</td>
+        <td>Estimated monthly cash back</td>
         <td>~R1,513</td>
       </tr>
       <tr>
@@ -941,113 +1132,97 @@
       </tr>
       <tr>
         <td>Payback period</td>
-        <td>~6 weeks</td>
+        <td>~18 months</td>
       </tr>
     </table>
     <p class="tariff-note">
-      Figures based on a 10kW commercial installation. Larger systems generate proportionally higher credits. Credits offset your full municipal account — electricity, water, solid waste. Cash refunds apply if your account runs into surplus after all municipal charges. Verify current SSEG credit rate before submitting.
+      Incentives offset your total municipal account — electricity, water, and solid waste. Cash refunds only apply if your account is in credit after all municipal charges are settled. Figures based on published City of Cape Town generation offset incentive rates and average export yields for a south-facing 10kW installation. Verify current rate before submitting.
     </p>
   </section>
 
   <!-- FAQ -->
   <section class="faq-section">
     <div class="tariff-overline">Questions</div>
-    <h2>What business owners typically ask</h2>
+    <h2>What clients typically ask</h2>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">
-        Our installer said everything was sorted. Is that right?
+        My installer said the paperwork was done. Is that enough?
         <span class="marker"></span>
       </button>
       <div class="faq-a">
-        Almost certainly not. Installers submit a Certificate of Compliance for the electrical work — that's not SSEG registration. If your business isn't receiving credits on your municipal account for exported power, the registration hasn't been done. It's a separate City of Cape Town process entirely.
+        Almost certainly not. Installers typically submit a Certificate of Compliance — which covers the electrical installation, not solar registration. The City's solar registration (SSEG) process is a separate, distinct application that requires e-Services submission and ECSA professional sign-off. If you aren't receiving export credits, it hasn't been done.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">
-        How long does the process take, and what do we need to do?
+        How long does approval take?
         <span class="marker"></span>
       </button>
       <div class="faq-a">
-        Typically 6 to 12 weeks from submission. From your side, very little — we'll need a few documents from your original installation and access to your municipal account reference. We handle everything else and keep you updated throughout.
+        Typically 6 to 12 weeks from a complete, correctly submitted application. The City of Cape Town's e-Services portal has improved considerably. Most delays stem from incomplete applications at submission — which is precisely what we prevent.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">
-        We have multiple premises — can you handle all of them?
+        Will my installer need to be involved?
         <span class="marker"></span>
       </button>
       <div class="faq-a">
-        Yes. Each premises requires its own SSEG application, but the process is the same. We can run multiple applications concurrently and give you a single view of where each one stands. Contact us to discuss pricing for multiple sites.
+        In some cases we'll need specific technical documents from the original installation. We handle that communication directly and only involve your installer if genuinely necessary. We'll advise you clearly after reviewing your documentation.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">
-        Does our system size affect eligibility?
+        Why Cape Town only?
         <span class="marker"></span>
       </button>
       <div class="faq-a">
-        Most small commercial systems — restaurants, salons, small offices — fall under 50kW and qualify for Cape Town's standard SSEG process. Larger systems may require a different track. We'll confirm your eligibility and the correct process after reviewing your system specs.
+        Cape Town's e-Services portal makes the solar registration process genuinely navigable. Other municipalities — Tshwane, eThekwini, Johannesburg — operate inconsistently and many lack a functioning sub-50kW process entirely. We begin where we can deliver reliably, and expand deliberately.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">
-        What if our application gets rejected?
+        What if the application is rejected?
         <span class="marker"></span>
       </button>
       <div class="faq-a">
-        We'll tell you exactly why and what's needed to resubmit. Most rejections are correctable — wrong documentation, system spec errors, or a grid capacity issue on your street. We advise on remediation at no extra cost.
+        We'll tell you exactly why, and what remediation is required. Most rejections are correctable — missing documents, incorrect system specifications, or a grid capacity constraint at street level. We advise on next steps at no additional cost.
       </div>
     </div>
   </section>
 
   <!-- FOOTER CTA -->
   <div class="footer-cta">
-    <h2>Your solar should be<br/><em>cutting your costs.</em></h2>
-    <p>Get your business SSEG-registered. We'll be in touch within 48 hours.</p>
-    <a href="#register">Get your business registered</a>
+    <h2>Your system should be<br/><em>working harder for you.</em></h2>
+    <p>Get registered and start offsetting your municipal bill. We'll be in touch within 48 hours.</p>
+    <a href="#register">Request an introduction</a>
   </div>
+
+  <p class="footer-sibling">Not exporting to the grid? <a href="/register.html">See registration without export</a>.</p>
 
   <!-- FOOTER -->
   <footer>
     <div class="wordmark">
       <div class="wordmark-top" style="font-size:1.1rem">watt butler</div>
       <div class="wordmark-rule"></div>
-      <div class="wordmark-sub">Cape Town</div>
+      <div class="wordmark-sub">Cape Town · Export</div>
     </div>
-    <small>© 2026 WattButler &nbsp;·&nbsp; Cape Town · Business SSEG Registration</small>
+    <small>© 2026 WattButler &nbsp;·&nbsp; Cape Town, South Africa</small>
   </footer>
 
   <script>
-    function handleSubmit() {
-      const name   = document.getElementById('name').value.trim();
-      const email  = document.getElementById('email').value.trim();
-      const suburb = document.getElementById('suburb').value.trim();
-      const status = document.getElementById('status').value;
-
-      if (!name || !email || !suburb || !status) {
-        alert('Please complete all fields before submitting.');
-        return;
-      }
-      const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRe.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-      }
-
-      // Replace with Formspree / Tally endpoint
-      console.log('Waitlist submission:', { name, email, suburb, status });
-
-      document.getElementById('form-body').style.display = 'none';
-      document.getElementById('success').style.display   = 'block';
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+      window.formspree = window.formspree || function() { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', { formElement: '#waitlist-form', formId: 'mdapqeap' });
+    });
 
     function toggleFaq(btn) {
-      const item   = btn.closest('.faq-item');
+      const item = btn.closest('.faq-item');
       const isOpen = item.classList.contains('open');
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
       if (!isOpen) item.classList.add('open');
